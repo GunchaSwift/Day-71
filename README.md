@@ -83,3 +83,33 @@ func fetchNearbyPlaces() async {
 }
 ```
 
+***Sorting Wikipedia results***
+
+Wikipedia's results come back sorted according to their internal page ID. Currently, we are sorting manually like this:
+
+```
+pages = items.query.pages.values.sorted { $0.title < $1.title }
+```
+
+We can move this code to our Page structure to make it conform to Comparable protocol.
+
+```
+struct Page: Codable, Comparable {
+
+    // More code here
+
+    static func <(lhs: Page, rhs: Page) -> Bool {
+        lhs.title < rhs.title
+    }
+}
+```
+
+... and then use just .sorted().
+
+Next, Wikipedia's JSON data does contain description, but it might be there or might not. And it is digged quite deep, so the best option here is to add computed property for it in our Page structure.
+
+```
+description: String {
+    terms?["description"]?.first ?? "No further information"
+}
+```
