@@ -11,6 +11,8 @@
 		C1A41D5828E77CFB00A1B04A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A41D5728E77CFB00A1B04A /* ContentView.swift */; };
 		C1A41D5A28E77D0300A1B04A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1A41D5928E77D0300A1B04A /* Assets.xcassets */; };
 		C1A41D5D28E77D0300A1B04A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1A41D5C28E77D0300A1B04A /* Preview Assets.xcassets */; };
+		C1A41D6428E77D3F00A1B04A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A41D6328E77D3F00A1B04A /* Location.swift */; };
+		C1A41D6628E77D6100A1B04A /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A41D6528E77D6100A1B04A /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		C1A41D5728E77CFB00A1B04A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C1A41D5928E77D0300A1B04A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1A41D5C28E77D0300A1B04A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C1A41D6328E77D3F00A1B04A /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		C1A41D6528E77D6100A1B04A /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				C1A41D5528E77CFB00A1B04A /* Day_71App.swift */,
 				C1A41D5728E77CFB00A1B04A /* ContentView.swift */,
+				C1A41D6328E77D3F00A1B04A /* Location.swift */,
+				C1A41D6528E77D6100A1B04A /* EditView.swift */,
 				C1A41D5928E77D0300A1B04A /* Assets.xcassets */,
 				C1A41D5B28E77D0300A1B04A /* Preview Content */,
 			);
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1A41D5828E77CFB00A1B04A /* ContentView.swift in Sources */,
+				C1A41D6428E77D3F00A1B04A /* Location.swift in Sources */,
+				C1A41D6628E77D6100A1B04A /* EditView.swift in Sources */,
 				C1A41D5628E77CFB00A1B04A /* Day_71App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
